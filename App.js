@@ -60,7 +60,12 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen}/>
+        <Stack.Screen 
+          name="Details" 
+          component={DetailsScreen}
+          //passing initial params  to the screen using initailParams prop
+          initialParams = {{itemId : 42}}
+          />
       </Stack.Navigator>
     </NavigationContainer>
   );
