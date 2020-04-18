@@ -23,6 +23,12 @@ function DetailsScreen({navigation}) {
       <Button
         title="Go to Details screen again"
         onPress={() => navigation.push('Details')}/>
+      <Button 
+        title="Go to Home"
+        onPress={() => {navigation.navigate('Home')}}/>
+      <Button 
+        title="Go back"
+        onPress={() => {navigation.goBack()}}/>
     </View>
   );
 }
